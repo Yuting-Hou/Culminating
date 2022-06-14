@@ -13,7 +13,7 @@ import net.minecraft.util.registry.Registry;
 import net.fabricmc.example.Example;
 import net.minecraft.item.Item;
 
-public class ModItems {
+public class ModItems{
 
     //These variables declearations creates items by calling registerItem()
 

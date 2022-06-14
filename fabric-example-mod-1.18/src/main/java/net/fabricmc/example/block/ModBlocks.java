@@ -7,6 +7,7 @@
 package net.fabricmc.example.block;
 
 import net.fabricmc.example.Example;
+import net.fabricmc.example.block.custom.LifeBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -24,15 +25,22 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresTool()
             ),
-            ItemGroup.MISC);
+            ItemGroup.MISC
+    );
 
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(FabricBlockSettings.of(Material.METAL)
                     .strength(4f)
                     .requiresTool()
-            )
-            ,ItemGroup.MISC
+            ),
+            ItemGroup.MISC
+    );
 
+    public static final Block LIFE_BLOCK = registerBlock("life_block",
+            new LifeBlock(FabricBlockSettings.of(Material.GLASS)
+                    .strength(1f)
+            ),
+            ItemGroup.MISC
             );
 
     /**

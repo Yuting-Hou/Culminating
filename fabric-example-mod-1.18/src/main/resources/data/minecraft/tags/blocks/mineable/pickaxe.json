@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "modid:ruby_ore",
-    "modid:ruby_block"
+    "modid:ruby_block",
+    "modid:life_block"
   ]
 }
