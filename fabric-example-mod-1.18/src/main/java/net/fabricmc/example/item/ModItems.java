@@ -5,6 +5,7 @@
  */
 package net.fabricmc.example.item;
 
+import net.fabricmc.example.item.custom.HealingWand;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ItemGroup;
@@ -24,6 +25,11 @@ public class ModItems{
             )
     );
 
+    public static final  Item HEALING_WAND = registerItem("healing_wand",
+            new HealingWand(
+                    new FabricItemSettings().group(ItemGroup.MISC)
+            )
+            );
 
     /**
      * Tells Fabric to register a new item into minecraft registry
