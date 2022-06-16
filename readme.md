@@ -1,4 +1,6 @@
-<h1>Instructions<h1/><br>
+<h1>Instructions<h1/>
+  <br>
   <p>
-    Install <a href="https://www.jetbrains.com/idea/">link text</a>
+    Install <a href="https://www.jetbrains.com/idea/">InteliJ community</a> <br>
+    
   <p/>
