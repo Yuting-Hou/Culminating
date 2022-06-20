@@ -1,4 +1,4 @@
-<h1>Instructions</h1>
+<h1>Instructions to test the program</h1>
   <br>
   <p>
     Install <a href="https://www.jetbrains.com/idea/">InteliJ community</a> <br>
