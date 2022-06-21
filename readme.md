@@ -7,5 +7,7 @@
     Under the console, type: ./gradlew genSources , this generate the minecraft library<br>
     - in inteliJ: 
     look at the right tab - gradle - task - build
-    right tab - fabric  - runClient
+    right tab - fabric  - runClient<br>
+    Important: make sure you are on JDK 17<br>
+  im using the <a href="https://adoptium.net/"> Adoptium JDK</a>
   <p/>
