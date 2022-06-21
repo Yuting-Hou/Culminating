@@ -1,3 +1,8 @@
+/**
+ * Yuting Hou - jun 20, 2022
+ * This is the lifeblock class
+ * Lifeblock gives the player extra HP when they stand on it
+ */
 package net.fabricmc.example.block.custom;
 
 import net.minecraft.block.Block;
@@ -16,7 +21,7 @@ public class LifeBlock extends Block {
     }
 
     /**
-     * The block heals the entity that stepped on it
+     * This method runs whenever a entity steps on it
      * @override onSteppedOn What will happen if the block is stepped on by a entity
      * @param world the minecraft dimension the block is in
      * @param pos the position of the block
@@ -25,11 +30,15 @@ public class LifeBlock extends Block {
      */
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if(!world.isClient()) {
-            if(entity instanceof LivingEntity) {
-                LivingEntity livingEntity = ((LivingEntity) entity); //casting
 
-                livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1));
+
+        if(!world.isClient()) { //changes where the calculation is done from client to the server
+
+            if(entity instanceof LivingEntity) { //if the entity is living
+                LivingEntity livingEntity = ((LivingEntity) entity); //casting Entity entity to LivingEntity
+
+                //adds bonus HP effect to said entity
+                livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 1)); //addes status effect
             }
         }
 

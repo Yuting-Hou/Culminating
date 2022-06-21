@@ -1,6 +1,7 @@
 /**
  * Example.java
  * This is the "main" class for my fabric mod
+ * Yuting Hou - jun 20, 2022
  */
 package net.fabricmc.example;
 

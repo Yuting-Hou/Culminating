@@ -1,6 +1,8 @@
 {
   "item.modid.ruby": "Ruby",
   "item.modid.healing_wand": "Healing Wand",
+  "item.modid.jetpack": "Jetpack",
+  "item.modid.jetpack_control": "Jetpack Control",
   "block.modid.ruby_ore": "Ruby Ore",
   "block.modid.ruby_block": "Ruby Block",
   "block.modid.life_block": "Life Block"
